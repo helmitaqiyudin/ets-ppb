@@ -56,12 +56,12 @@ class _BookDetailPageState extends State<BookDetailPage> {
             ),
           ),
           const SizedBox(height: 8),
-          Image(image: NetworkImage(book.coverUrl)),
-          const SizedBox(height: 8),
           Text(
             DateFormat.yMMMd().format(book.createdTime),
             style: const TextStyle(color: Colors.white38),
           ),
+          const SizedBox(height: 8),
+          Image(image: NetworkImage(book.coverUrl)),
           const SizedBox(height: 8),
           Text(
             book.description,
